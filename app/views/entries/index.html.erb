@@ -1,0 +1,8 @@
+<div class="row">
+    <% @entries.each do |entry| %>
+        <div class="col-12">
+            <%= link_to entry.title, entry %> - <i> published <%= time_ago_in_words(entry.published) %> ago</i>
+        </div>
+    <% end %>
+</div>
+            
