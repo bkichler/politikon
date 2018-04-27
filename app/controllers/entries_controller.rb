@@ -1,18 +1,13 @@
 class EntriesController < ApplicationController
-  before_action :set_feed, only: :index
-  attr_accessor :entries
+  # before_action :set_feed, only: :index
 
   def index
-    @entries = @feed.entries.order('published desc')
+    @entries = Entry.where(:feed_id == 4)
   end
 
-  def show
-    @entry = Entry.find(params[:id])
-  end
+  # private
 
-  private
-  
-  def set_feed
-    @feed = Feed.find(params[:id])
-  end
+  # def set_feed
+  #   @feed = Feed.find(4)
+  # end
 end

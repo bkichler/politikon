@@ -1,8 +1,28 @@
 <div class="row">
-    <% @entries.each do |entry| %>
-        <div class="col-12">
-            <%= link_to entry.title, entry %> - <i> published <%= time_ago_in_words(entry.published) %> ago</i>
-        </div>
-    <% end %>
+  <div class="booyah-box col-sm-5 offset-md-1">
+    <h1>From the left</h1>
+    <ul> 
+        <% @entries.each do |entry| %>
+            <li>
+                <%= entry.title %>
+                <ul>
+                    <li>
+                        <%= entry.url %>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <%= entry.published %>
+                    </li>
+                </ul>
+            </li>
+        <% end %>
+    </ul>
+        
+  </div>
+
+  <div class="booyah-box col-sm-5 col-md-push-1">
+    <h1>From the right</h1>
+  </div>
 </div>
-            
+
