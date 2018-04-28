@@ -2,7 +2,8 @@ class EntriesController < ApplicationController
   # before_action :set_feed, only: :index
 
   def index
-    @entries = Entry.where(:feed_id == 4)
+    @lefts = Entry.where("feed_id = 4").order(published: :desc)
+    @rights = Entry.where("feed_id = 5").order(published: :desc)
   end
 
   # private
