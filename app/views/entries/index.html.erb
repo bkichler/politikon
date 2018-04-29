@@ -12,7 +12,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <%= entry.published %>
+                        <i><%= time_ago_in_words(entry.published) %> ago</i>
                     </li>
                 </ul>
             </li>
@@ -34,7 +34,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <%= entry.published %>
+                        <i><%= time_ago_in_words(entry.published) %> ago</i>
                     </li>
                 </ul>
             </li>
