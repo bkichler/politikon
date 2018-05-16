@@ -62,3 +62,8 @@ end
 
 # feedjira gem
 gem 'feedjira'
+
+gem 'pry'
+
+# kaminari - pagination
+gem 'kaminari'

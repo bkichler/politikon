@@ -22,8 +22,10 @@
   background-image: image_url('grey_wash_wall.png');
 }
 
-a.navbar-brand {
-  font-size: 28px;
+.navbar-brand {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .frosty {
@@ -58,3 +60,6 @@ body {
     background-color: #F5F5F5;
 }
 
+.clr {
+  clear: both;
+}
