@@ -15,8 +15,30 @@
     <%= yield %>
     <div id="footer">
       <div class="container">
-        <br /><br />
-        <b>Footer</b>     
+        <div class="row">
+          <div class="col-sm">
+            <b>Contact</b>
+            <br />
+            brian.kichler@gmail.com
+            <br />
+            2302 Kimberly Ct
+            <br />
+            Carlsbad, CA 92008
+          </div>
+          <div class="col-sm social">
+            <b>Social</b>
+            <br /><br />
+              <%= link_to 'http://bkichler.github.io' do %>
+                <span class="fa fa-github-square fa-2x social-button"></span>
+              <% end %>
+              <%= link_to 'https://www.linkedin.com/in/briankichler/' do %>
+                <span class="fa fa-linkedin-square fa-2x social-button"></span>
+              <% end %>
+              <%= link_to 'https://twitter.com/BrianKichler' do %>
+                <span class="fa fa-twitter-square fa-2x social-button"></span>
+              <% end %>
+          </div>
+        </div>  
       </div>
     </div>
   </body>

@@ -67,3 +67,6 @@ gem 'pry'
 
 # kaminari - pagination
 gem 'kaminari'
+
+# font-awesome 
+gem 'font-awesome-rails'
